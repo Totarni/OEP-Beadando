@@ -1,0 +1,15 @@
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.csproj.AssemblyReference.cache
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.GeneratedMSBuildEditorConfig.editorconfig
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.AssemblyInfoInputs.cache
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.AssemblyInfo.cs
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.csproj.CoreCompileInputs.cache
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\bin\Debug\net6.0\Beadando_Tömegközlekedés.exe
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\bin\Debug\net6.0\Beadando_Tömegközlekedés.deps.json
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\bin\Debug\net6.0\Beadando_Tömegközlekedés.runtimeconfig.json
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\bin\Debug\net6.0\Beadando_Tömegközlekedés.dll
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\bin\Debug\net6.0\Beadando_Tömegközlekedés.pdb
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.dll
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\refint\Beadando_Tömegközlekedés.dll
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.pdb
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.genruntimeconfig.cache
+D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\ref\Beadando_Tömegközlekedés.dll
