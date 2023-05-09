@@ -49,8 +49,10 @@ namespace Beadando_Tömegközlekedés
             {
                 try
                 {
-                if (max == null) max = ceg.LegdragabbEvben(ev);
-                else if (max.ar < ceg.LegdragabbEvben(ev).ar) max = ceg.LegdragabbEvben(ev);
+                    if (max == null)
+                        max = ceg.LegdragabbEvben(ev);
+                    else if (max.ar < ceg.LegdragabbEvben(ev).ar)
+                        max = ceg.LegdragabbEvben(ev);
                 }
                 catch (NincsMegfeleloException)
                 {

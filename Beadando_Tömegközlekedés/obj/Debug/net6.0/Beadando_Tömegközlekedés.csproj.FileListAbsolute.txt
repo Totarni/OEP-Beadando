@@ -13,3 +13,18 @@ D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6
 D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.pdb
 D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.genruntimeconfig.cache
 D:\Suli\Egyetem\OEP\Beadandó Feladat\Beadando_Tömegközlekedés\obj\Debug\net6.0\ref\Beadando_Tömegközlekedés.dll
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\bin\Debug\net6.0\Beadando_Tömegközlekedés.exe
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\bin\Debug\net6.0\Beadando_Tömegközlekedés.deps.json
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\bin\Debug\net6.0\Beadando_Tömegközlekedés.runtimeconfig.json
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\bin\Debug\net6.0\Beadando_Tömegközlekedés.dll
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\bin\Debug\net6.0\Beadando_Tömegközlekedés.pdb
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.csproj.AssemblyReference.cache
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.AssemblyInfoInputs.cache
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.AssemblyInfo.cs
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.csproj.CoreCompileInputs.cache
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.dll
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\obj\Debug\net6.0\refint\Beadando_Tömegközlekedés.dll
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.pdb
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\obj\Debug\net6.0\Beadando_Tömegközlekedés.genruntimeconfig.cache
+C:\Users\DIO\Documents\OEP-Beadando\Beadando_Tömegközlekedés\obj\Debug\net6.0\ref\Beadando_Tömegközlekedés.dll

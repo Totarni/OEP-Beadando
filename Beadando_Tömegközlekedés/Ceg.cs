@@ -49,13 +49,11 @@ namespace Beadando_Tömegközlekedés
         public int JavitasAlattDB()
         {
             int n = 0;
-            List<Jarmu> list = new List<Jarmu>();
             foreach (Munkalap lapok in munkalapok)
             {
-                if (lapok.befejezett == false && !list.Contains(lapok.jarmu) && lapok.tipus == "javítás")
+                if (lapok.befejezett == false && lapok.tipus == "javítás")
                 {
                     n++;
-                    list.Add(lapok.jarmu);
                 }
             }
             return n;
