@@ -26,19 +26,14 @@ namespace Beadando_Tömegközlekedés
         public string arany15EvesBuszpark()
         {
             int s = 0;
-            foreach (Jarmu jarmu in Jarmuvek)
-            {
-                if (jarmu.tipus == "Autóbusz") { s++; }
-            }
-            if(s <1)
-                return "";
-
             int s2 = 0;
             foreach (Jarmu jarmu in Jarmuvek)
             {
+                if (jarmu.tipus == "Autóbusz") { s++; }
                 if (jarmu.tipus == "Autóbusz" && 2023 - jarmu.gyartasev > 15) { s2++; }
             }
-
+            if(s <1)
+                return "";
             return $"{s2} : {s}";
         }
 
