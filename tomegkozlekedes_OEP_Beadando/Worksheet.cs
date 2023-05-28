@@ -65,7 +65,7 @@ namespace tomegkozlekedes_OEP_Beadando
         }*/
         public DateOnly GetSheetEnd()
         {
-            if (to == default(DateOnly)) //idk hogy ez müködik e
+            if (to == default(DateOnly)) //ezt interneten találtam, elvileg megnézi hogy létezik e a to.
             {
                 throw new NotFinishedException();
             }

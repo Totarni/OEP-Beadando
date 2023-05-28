@@ -37,6 +37,10 @@ namespace tomegkozlekedes_OEP_Beadando
                     {
                         Console.WriteLine($"Hibás övezet bemenet a {parts[0]} azonositóju járműnél");
                     }
+                    catch(IncorrectVehicleException) 
+                    {
+                        Console.WriteLine($"Hibás Jármű tipus a {parts[0]} azonositóju járműnél");
+                    }
                 }
             }
             return err;
@@ -79,6 +83,10 @@ namespace tomegkozlekedes_OEP_Beadando
                         catch (WrongTypeException)
                         {
                             Console.WriteLine($"Nem található \"{parts2[3]}\" szervizelés tipus");
+                        }
+                        catch (ActiveWorksheetException)
+                        {
+                            Console.WriteLine($"Már létezik egy aktív munkalap \"{parts2[0]}\"-nak");
                         }
                     }
                 }

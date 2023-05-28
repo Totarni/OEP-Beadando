@@ -82,7 +82,7 @@ namespace Tomegkozlekedes_Tester
             gov.GetVehicleById("azon - 206").CreateSheet(DateOnly.Parse("2017 - 03 - 25"), DateOnly.Parse("2017 - 04 - 05"), DateOnly.Parse("2022 - 08 - 15"), 160000, MyType.Átvizsgálás, gov.GetCompanyByName("DebreceniJárműcég"));
 
             // javitás alattra direkt az előzőkhöz képest 1-et be raktam,illetve hozzá adtam egy új járművet aminek nincs még munka lapja, az össze ami pedig nem atvizsgálás, tehát => van 7 db jármű, 1 db javitás alatt, 1 átvizsgálás, a maradék 5 pedig üzembe. ez alapján 6 db nem átvizsgálás alatt álló járművan. tehát az azárny 1/6 lesz
-            Assert.AreEqual(1/(double)6,gov.MaintenanceRate());
+            Assert.AreEqual(1 / (double)6, gov.MaintenanceRate());
         }
         [TestMethod]
         public void TestMostExpensiveFeeVehicle()
@@ -110,6 +110,54 @@ namespace Tomegkozlekedes_Tester
 
             // hozzá adtam még egy 22-ben történő munkát hogy a max vizsgálat tényleg megy e. igy elvileg a azon 202-es lesz a drágább
             Assert.AreEqual("azon - 202", gov.MostExpensiveFeeVehicle().GetId());
+        }
+
+        [TestMethod]
+
+        public void TestSheetEnded()
+        {
+            Vehicle car = new Vehicle("carid", DateOnly.FromDateTime(DateTime.Now), 69, Belvaros.Instance());
+            Worksheet carSheet = new Worksheet(new Company("carComp"), car, DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now), MyType.Javitás);//ez dob exception
+            //Worksheet carSheet = new Worksheet(new Company("carComp"), car, DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now),69, MyType.Javitás); // ez nem dobb
+            Assert.ThrowsException<NotFinishedException>(() => carSheet.GetSheetEnd());
+            //tehát helyesen müködik
+        }
+
+        [TestMethod]
+
+        public void TestSheetAlreadyExist()
+        {
+            Vehicle car = new Vehicle("carid", DateOnly.FromDateTime(DateTime.Now), 69, Belvaros.Instance());
+            car.CreateSheet(DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now),MyType.Javitás,new Company("comp"));
+            Assert.ThrowsException<ActiveWorksheetException>(() => car.CreateSheet(DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now), MyType.Javitás, new Company("comp")));
+
+        }
+
+        [TestMethod]
+        public void TestSheetNotExist()
+        {
+            Vehicle car = new Vehicle("carid", DateOnly.FromDateTime(DateTime.Now), 69, Belvaros.Instance());
+            Assert.ThrowsException<NoActiveWorksheetException>(() => car.CompleteSheet(69,DateOnly.FromDateTime(DateTime.Now)));
+
+        }
+
+        [TestMethod]
+        public void TestWorksheetException()
+        {
+            Vehicle car = new Vehicle("carid", DateOnly.FromDateTime(DateTime.Now), 69, Belvaros.Instance());
+
+            Assert.ThrowsException<NoWorksheetException>(() => car.GetMaxServiceFee2022());
+        }
+        [TestMethod]
+        public void TestWorksheetExceptionWithSheets()
+        {
+            Vehicle car = new Vehicle("carid", DateOnly.FromDateTime(DateTime.Now), 69, Belvaros.Instance());
+
+            car.CreateSheet(DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now),69, MyType.Javitás, new Company("testercomp"));
+            car.CreateSheet(DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now),79, MyType.Javitás, new Company("testercomp"));
+            car.CreateSheet(DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now),99, MyType.Javitás, new Company("testercomp"));
+            car.CreateSheet(DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now), MyType.Javitás, new Company("testercomp"));
+            Assert.ThrowsException<NoWorksheetException>(() => car.GetMaxServiceFee2022());
         }
     }
 }
