@@ -44,7 +44,7 @@ namespace tomegkozlekedes_OEP_Beadando
 
         public void WoorksheetComplete(double cost, DateOnly to)
         {
-            //ez csak azokra lesz meg híva ami még nincs be fejezve. lesz feljebb rá megoldás
+            //ez csak azokra lesz meg híva ami még nincs be fejezve.
             this.to = to;
             this.cost = cost;
         }
@@ -54,15 +54,10 @@ namespace tomegkozlekedes_OEP_Beadando
             return cost;
         }
 
-        public new MyType GetType() //itt a new szót a javasolta esetleg majd megkérdezem mit is jelent
+        public new MyType GetType()
         {
             return type;
         }
-        //itt rájöttem hogy azt kell nézni hogy mikor van már ki fizetve egy jármű. nem azt hogy mikor kezdték
-        /*public DateOnly GetSheetCreation()
-        {
-            return sheetCreation;
-        }*/
         public DateOnly GetSheetEnd()
         {
             if (to == default(DateOnly)) //ezt interneten találtam, elvileg megnézi hogy létezik e a to.

@@ -31,16 +31,8 @@ namespace tomegkozlekedes_OEP_Beadando
             factor= -1.0;
         }
 
-        /*public void CreateSheet(Company company, MyType type)//jelen pillanatba
-        {
-            if (actualWorksheet != null) throw new ActiveWorksheetException();
-            actualWorksheet = new Worksheet(company, this, DateOnly.FromDateTime(DateTime.Now), DateOnly.FromDateTime(DateTime.Now), type);
-            worksheets.Add(actualWorksheet);
-        }*/
         public void CreateSheet(DateOnly sheetCreation, DateOnly from, DateOnly to, double cost, MyType type, Company company) //befejezett lap hozzá adása
         {
-            //if (actualWorksheet != null) throw new ActiveWorksheetException();
-            //actualWorksheet = new Worksheet(company, this, sheetCreation, from, to, cost, type);
             worksheets.Add(new Worksheet(company, this, sheetCreation, from, to, cost, type));
         }
         public void CreateSheet(DateOnly sheetCreation, DateOnly from, MyType type, Company company)// nyitott lap hozzá adása
@@ -71,7 +63,7 @@ namespace tomegkozlekedes_OEP_Beadando
                 try
                 {
 
-                    if (!l && m.GetSheetEnd().Year == 2022)//lehet akkor fizetnek amikor befejezték a javitást
+                    if (!l && m.GetSheetEnd().Year == 2022)
                     {
                         maxfee = m.GetCost();
                         l = true;
@@ -97,12 +89,6 @@ namespace tomegkozlekedes_OEP_Beadando
         {
             return creationDate;
         }
-
-        /*public String GetType()
-        {
-            return type;
-        }*/
-
         public bool IsUnderReview()
         {
             if (actualWorksheet == null) return false;

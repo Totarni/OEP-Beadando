@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            FileInputReader inputreader = new FileInputReader("input_jarmu2chatgpt.txt");
+            FileInputReader inputreader = new FileInputReader("input_jarmu.txt");
+            //FileInputReader inputreader = new FileInputReader("input_jarmu2chatgpt.txt");
             inputreader.ReadVehicle(out Government gov);
             inputreader.ReadWorksheet(gov);
             Console.WriteLine($"A 15 évnél idősebb és az összes buszok aránya: {gov.OldBusesRate()}");

@@ -1,2 +1,2 @@
 ﻿Budapest_Főváros_Önkormányzata azon-123 Villamos Belváros 2016-01-01 23500000 azon-111 Autóbusz Belváros 2012-01-01 8700000 azon-222 Autóbusz Külváros 2019-01-01 9000000 azon-223 Autóbusz Külváros 2000-01-01 9000000
-azon-123 2017-01-01 2017-01-15 2022-01-30 250000 Átvizsgálás PlatinumJárműcég;azon-123 2017-01-01 2017-07-08 Javítás PlatinumJárműcég;azon-222 2017-01-01 2019-01-01 2022-01-30 2500200 Átvizsgálás PlatinumJárműcég;azon-222 2019-01-01 2019-05-10 Átvizsgálás KanizsaBuszcég
+azon-123 2017-01-01 2017-01-15 2022-01-30 250000 Átvizsgálás PlatinumJárműcég;azon-123 2017-01-01 2017-07-08 Javítás PlatinumJárműcég;azon-222 2017-01-01 2019-01-01 2022-01-30 2500200 Átvizsgálás PlatinumJárműcég;azon-222 2019-01-01 2019-05-10 Javítás KanizsaBuszcég

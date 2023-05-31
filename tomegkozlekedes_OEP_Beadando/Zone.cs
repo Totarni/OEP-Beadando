@@ -13,11 +13,6 @@ namespace tomegkozlekedes_OEP_Beadando
         public abstract double Factor(Autobusz f);
         public abstract double Factor(Troli f);
 
-        /*public double Factor(Vehicle vehicle)
-        {
-            throw new NotImplementedException();
-            //a vehicle-t ugy se példáyositanak, de nem tudom/emlékszem hogy lehetne rá mondani valamit hogy ilyenkor ezt ne keljen létre hozni. esetleg majd megkérdezem ha nem felejtem el. :)
-        }*/
     }
 
     public class Belvaros : Zone
